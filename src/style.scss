@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+$primaryGradientColor: #fff;
+$secondaryGradientColor: #019bfd;
+
+table {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-collapse: collapse;
+
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+
+  border: 2px solid rgb(140 140 140);
+}
+
+thead {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  padding: 8px 10px;
+  border: 1px solid rgb(160 160 160);
+}
+
+td {
+  background-color: #fff;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+.reset-listado {
+  text-align-last: left;
+  list-style: none;
+}
+
+.background {
+  padding-top: 3rem;
+
+  font-size: 72px;
+
+  background: hsl(210deg 96% 46%);
+  background: linear-gradient(to right, #5dbaf8, #009afe);
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: grid;
+  grid-gap: 3rem;
+  place-items: center;
+
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 2rem;
+}
